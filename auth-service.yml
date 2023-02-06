@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:6000/kong
+    password: saiddemir123
+    username: saiddemir98
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: auth-service
+
+
+server:
+  port: 8000
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
